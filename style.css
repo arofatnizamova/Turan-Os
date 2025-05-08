@@ -151,6 +151,16 @@ a{
 .iti--allow-dropdown {
     width: 100%;
 }
+footer{
+    background: url('images/home-page/footer-bg.png') no-repeat center/cover;
+}
+.footer-logo{
+    width: 160px;
+}
+.long-text {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
 @media(max-width: 1200px){
     .bg-xl-white{
         background: unset;
@@ -197,5 +207,8 @@ a{
     }
     .container-sm-p-0{
         padding: 0 !important;
+    }
+    .w-sm-70{
+        width: 70%;
     }
 }
