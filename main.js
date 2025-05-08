@@ -72,9 +72,9 @@ $(document).ready(function () {
                     },
           ]
       }
-    }else if (slider.hasClass('bus')) {
+    }else if (slider.hasClass('reviews')) {
       extraOptions = {
-        slidesToShow: 2.8,
+        slidesToShow: 3.8,
           slidesToScroll: 1,
           centerMode: false,
           arrows: true,
@@ -100,8 +100,6 @@ $(document).ready(function () {
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                arrows: false,
-                dots: true
               }
                     },
           ]
