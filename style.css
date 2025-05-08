@@ -1,6 +1,7 @@
 :root{
     --color-corp: #00AAD3;
     --box-shadow: 0 1px 8px 0 rgba(22, 33, 54, 0.05);
+    --box-shadow-2:  0 2px 4px 0 rgba(22, 33, 54, 0.32);
 }
 body{
     font-family: "Inter", sans-serif;
@@ -35,10 +36,13 @@ a{
     background: var(--color-corp);
 }
 .w-fit-content{
-    width: fit-content;
+    width: fit-content !important;
 }
 .box-shadow{
     box-shadow: var(--box-shadow);
+}
+.box-shadow-2{
+    box-shadow: var(--box-shadow-2);
 }
 .navbar-toggler:focus {
     box-shadow: none;
@@ -101,7 +105,26 @@ a{
 .slider-btn-right{
     right: -5%;
 }
-
+.input-control{
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    width: 90px;
+}
+.w-10{
+    width: 10%;
+}
+.form-check-input{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.form-check-input:checked {
+    background-color: white; /* Фон чекбокса (можно оставить белым или изменить) */
+    border-color: #00AAD3; /* Цвет рамки */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%2300AAD3' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+.form-check-input:focus {
+    box-shadow: none;
+}
 @media(max-width: 1200px){
     .bg-xl-white{
         background: unset;
