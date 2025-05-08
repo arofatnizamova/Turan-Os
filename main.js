@@ -40,18 +40,9 @@ $(document).ready(function () {
             },
   ]
       }
-    } else if (slider.hasClass('offers')) {
+    } else if (slider.hasClass('servises')) {
       extraOptions = {
-        slidesToShow: 1,
-          slidesToScroll: 1,
-          centerMode: false,
-          arrows: true,
-          dots: true,
-          autoPlay: true,
-      }
-    }else if (slider.hasClass('gallery')) {
-      extraOptions = {
-        slidesToShow: 3,
+        slidesToShow: 4,
           slidesToScroll: 1,
           centerMode: false,
           arrows: true,
@@ -61,7 +52,7 @@ $(document).ready(function () {
             {
               breakpoint: 1200,
               settings: {
-                slidesToShow: 2.5,
+                slidesToShow: 3.5,
                 slidesToScroll: 1,
               }
             },
