@@ -175,4 +175,7 @@ a{
     .icon-height{
         height: 150px;
     }
+    .container-sm-p-0{
+        padding: 0 !important;
+    }
 }

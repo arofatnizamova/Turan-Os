@@ -47,7 +47,7 @@ $(document).ready(function () {
           centerMode: false,
           arrows: true,
           dots: false,
-          autoPlay: true,
+          autoplay: true,
           responsive: [
             {
               breakpoint: 1200,
@@ -104,7 +104,39 @@ $(document).ready(function () {
                     },
           ]
       }
-    }
+    }else if (slider.hasClass('clients')) {
+        extraOptions = {
+          slidesToShow: 7.5,
+            slidesToScroll: 1,
+            centerMode: false,
+            arrows: true,
+            dots: false,
+            autoPlay: true,
+            responsive: [
+              {
+                breakpoint: 1400,
+                settings: {
+                  slidesToShow: 6.2,
+                  slidesToScroll: 2,
+                }
+              },
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 4.5,
+                  slidesToScroll: 2,
+                }
+              },
+              {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 2.5,
+                  slidesToScroll: 1,
+                }
+                      },
+            ]
+        }
+      }
     slider.slick($.extend({}, extraOptions, options ));
   })
   
