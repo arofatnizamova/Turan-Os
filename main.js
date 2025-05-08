@@ -171,6 +171,15 @@ $(document).ready(function () {
       }
     slider.slick($.extend({}, extraOptions, options ));
   })
+  const phoneInput = document.querySelector("#phone");
+  if (phoneInput) { // Проверяем, есть ли элемент с ID "phone"
+    const iti = window.intlTelInput(phoneInput, {
+      initialCountry: "uz",
+      separateDialCode: false,
+      preferredCountries: ["uz", "ru", "us"],
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+    });
+  }
   
   })
   

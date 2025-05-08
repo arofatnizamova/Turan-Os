@@ -131,6 +131,26 @@ a{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.form-control{
+    padding-left: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #D9D9D9;
+    width: 100%;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: unset;
+    box-shadow: none;
+}
+.form-control::placeholder{
+    color: #999999;
+}
+.iti--allow-dropdown {
+    width: 100%;
+}
 @media(max-width: 1200px){
     .bg-xl-white{
         background: unset;
