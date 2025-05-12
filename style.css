@@ -1,5 +1,6 @@
 :root{
     --color-corp: #00AAD3;
+    --color-smoke: #D9E7EB;
     --box-shadow: 0 1px 8px 0 rgba(22, 33, 54, 0.05);
     --box-shadow-2:  0 2px 4px 0 rgba(22, 33, 54, 0.32);
 }
@@ -20,6 +21,9 @@ a{
 .fs-title{
     font-size: clamp(1.375rem, 1.075rem + 1.5vw, 2.875rem);
 }
+.fs-title-2{
+    font-size: 46px;
+}
 .fs-paragraph{
     font-size: clamp(1rem, 0.875rem + 0.625vw, 1.625rem);
 }
@@ -34,6 +38,9 @@ a{
 }
 .bg-corp{
     background: var(--color-corp);
+}
+.bg-smoke{
+    background: var(--color-smoke);
 }
 .w-fit-content{
     width: fit-content !important;
@@ -60,7 +67,7 @@ a{
 }
 .banner-info{
     width: 100%;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     left: 5%;
 }
@@ -170,8 +177,11 @@ footer{
 .img-hover:hover p{
     text-decoration: underline;
 }
+.bg-xl-corp{
+    background: var(--color-corp);
+}
 @media(max-width: 1200px){
-    .bg-xl-white{
+    .bg-xl-white, .bg-xl-corp{
         background: unset;
     }
     .slider-item:not(:first-child) .border-left::after{
@@ -201,7 +211,7 @@ footer{
     }
     .banner-info{
         width: 100%;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
         left:0;
     }

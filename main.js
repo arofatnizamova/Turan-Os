@@ -183,5 +183,47 @@ $(document).ready(function () {
   AOS.init({
     duration: 800,
   });
+  // Функция для анимации счетчика
+  function animateCounter(counter) {
+    const target = $(counter).data('target');
+    let current = 0;
+    const increment = target / 100;  // Регулируем скорость анимации
+
+    function updateCounter() {
+      if (current < target) {
+        current += increment;
+        $(counter).text(Math.ceil(current));
+        requestAnimationFrame(updateCounter);
+      } else {
+        $(counter).text(target);
+      }
+    }
+
+    updateCounter();
+  }
+
+  // Обработчик прокрутки
+  function checkScroll() {
+    $('.counter').each(function() {
+      const $this = $(this);
+      const offset = $this.offset().top;
+      const windowHeight = $(window).height();
+      const scrollPosition = $(window).scrollTop();
+
+      // Проверяем, находится ли элемент в пределах видимой части окна
+      if (offset <= scrollPosition + windowHeight && offset + $this.outerHeight() >= scrollPosition) {
+        if (!$this.hasClass('animated')) {
+          $this.addClass('animated');
+          animateCounter($this);
+        }
+      }
+    });
+  }
+
+  // Инициализация проверки при прокрутке
+  $(window).on('scroll', checkScroll);
+
+  // Также можно проверить сразу при загрузке страницы, если элементы уже видны
+  checkScroll();
   })
   
