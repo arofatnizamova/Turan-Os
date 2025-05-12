@@ -161,6 +161,15 @@ footer{
     word-break: break-word;
     overflow-wrap: break-word;
 }
+.img-hover img, .img-hover p{
+    transition: all 0.3s ease;
+}
+.img-hover:hover img{
+    transform: scale(1.1);
+}
+.img-hover:hover p{
+    text-decoration: underline;
+}
 @media(max-width: 1200px){
     .bg-xl-white{
         background: unset;
