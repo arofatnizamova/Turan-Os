@@ -180,6 +180,14 @@ footer{
 .bg-xl-corp{
     background: var(--color-corp);
 }
+.quote-1{
+    top: 3%;
+    left: 5%;
+}
+.quote-2{
+    bottom: 3%;
+    right: 5%;
+}
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;
