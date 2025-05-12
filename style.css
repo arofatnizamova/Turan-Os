@@ -1,6 +1,7 @@
 :root{
     --color-corp: #00AAD3;
     --color-smoke: #D9E7EB;
+    --linear-gradient:  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 26.4%, #fff 100%);
     --box-shadow: 0 1px 8px 0 rgba(22, 33, 54, 0.05);
     --box-shadow-2:  0 2px 4px 0 rgba(22, 33, 54, 0.32);
 }
@@ -187,6 +188,32 @@ footer{
 .quote-2{
     bottom: 3%;
     right: 5%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: unset;
+}
+.nav-pills .nav-link {
+    color: rgba(0, 0, 0, 0.6);
+}
+.bg-white-gradient {
+    background: var(--linear-gradient);
+}
+.news-info-box {
+    margin-top: -70px;
+}
+.news-info-box p {
+    transition: all 0.3s ease;
+}
+.news-info-box:hover p {
+    text-decoration: underline;
+}
+.two-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
