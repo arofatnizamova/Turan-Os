@@ -168,6 +168,38 @@ $(document).ready(function () {
                       },
             ]
         }
+      }else if (slider.hasClass('sertificates')) {
+        extraOptions = {
+          slidesToShow: 4.7,
+            slidesToScroll: 1,
+            centerMode: false,
+            arrows: true,
+            dots: false,
+            autoPlay: true,
+            responsive: [
+              {
+                breakpoint: 1400,
+                settings: {
+                  slidesToShow: 3.5,
+                  slidesToScroll: 2,
+                }
+              },
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 2.5,
+                  slidesToScroll: 2,
+                }
+              },
+              {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                }
+                      },
+            ]
+        }
       }
     slider.slick($.extend({}, extraOptions, options ));
   })
