@@ -2,6 +2,7 @@
     --color-corp: #00AAD3;
     --color-smoke: #D9E7EB;
     --linear-gradient:  linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 26.4%, #fff 100%);
+    --linear-gradient-2:  linear-gradient(270deg, #78ddf6 22.49%, #00aad3 67.08%, #00aad3 89.84%, #78ddf6 100%);
     --box-shadow: 0 1px 8px 0 rgba(22, 33, 54, 0.05);
     --box-shadow-2:  0 2px 4px 0 rgba(22, 33, 54, 0.32);
 }
@@ -231,6 +232,18 @@ footer{
 .bg-sm-corp h3{
     color: black;
 }
+.bg-corp-box{
+    background: var(--color-blue);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+.bg-gradient-2{
+    background: var(--linear-gradient-2) no-repeat;
+}
 /*time line*/
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -383,7 +396,9 @@ footer{
 .bg-lg-white{
     background: white;
 }
-
+.bg-light-grey{
+    background: #ede9e98e;
+}
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;
@@ -404,6 +419,12 @@ footer{
         top: 50%;
         transform: translateY(-50%);
         left:0;
+    }
+    .bg-gradient-2{
+        background: var(--color-corp);
+    }
+    .rounded-sm{
+        border-radius: 20px;
     }
 }
 @media (max-width: 768px) {
@@ -476,4 +497,5 @@ footer{
     .bg-lg-white{
         background: unset;
     }
+
 }
