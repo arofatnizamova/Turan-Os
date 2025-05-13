@@ -383,6 +383,7 @@ footer{
 .bg-lg-white{
     background: white;
 }
+
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;

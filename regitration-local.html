@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Turan OS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body > 
+    <header class="bg-white py-3">
+        <div class="container d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="row gx-0 justify-content-between w-100">
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex justify-content-between align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="icons/logo.svg" alt="Logo" class="logo img-fluid">
+                            </a>
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon main-page-toggler navbar-toggler-custom"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav bg-blur gap-xxl-3 py-2 px-lg-4 mx-auto  align-items-lg-center h-100">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">О нас</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="news.html" class="nav-link">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="vacancy.html" class="nav-link">Вакансии</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contacts.html" class="nav-link">Контакты</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown w-fit-content border-0 rounded-2 bg-corp">
+                                    <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      RU
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                                      <li><a class="dropdown-item" href="#">Английский</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="bg-black text-white rounded-2 ms-5 d-lg-flex d-none">
+                <button class="btn btn-offcanvas  text-white d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span>Наши услуги</span>
+                    <span class="offcanvas-burger ms-2 d-block"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-xl-block d-none">
+            <div class="gap-4 fw-medium d-flex text-corp">
+                <a href="mailto:salesturanbuh@gmail.com@gmail.com">salesturanbuh@gmail.com@gmail.com</a>
+                <a href="tel:+998974314000">
+                    +998 (97) 431-40-00
+                </a>
+                <a href="https://go.2gis.com/15ou9">Ташкент, Чиланзар, Ц квартал, ул.Кичик Халка йули, дом 7/1</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="pt-lg-5 pt-3">
+            <div class="container">
+                <h3 class="fw-bold fs-title" data-aos="fade-up">Регистрация бизнеса в Узбекистане под ключ</h3>
+                <p class="fs-paragraph">Регистрация бизнеса в Узбекистане может быть сложной процедурой, но мы сделаем всё за вас. </p>
+                <div class="mt-lg-5 mt-3 position-relative" data-aos="fade-up">
+                    <img src="images/news/bg.png" alt="" class="rounded-4 img-fluid object-fit-cover h-sm-350 w-100">
+                    <div class="position-absolute banner-info">
+                        <div class="row gx-0 w-100 justify-content-center justify-content-lg-start">
+                            <div class="col-lg-5 col-10">
+                                <div class="w-100 h-100  px-sm-5 px-4 pt-5 pb-4  position-relative">
+                                    <div class="banner-info-container rounded-5 position-absolute"></div>
+                                    <p class="fw-light fs-span text-white ">
+                                        TuranOS — это команда профессионалов с опытом в открытии компаний, бухгалтерии, налоговом сопровождении и юридических вопросах. Мы обеспечиваем полное сопровождение для вашего успеха.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-title fw-bold mb-lg-5 mb-3">С нами вы получите</h3>
+                <div class="bg-xl-white position-relative p-sm-5 p-3 rounded-4">
+                    <div class="slick-slider get">
+                        <div class="slider-tem">
+                           <div class="w-100 h-100">
+                               <img src="icons/registration/1.svg" alt="" class="img-fluid d-block mx-auto">
+                               <p class="fs-paragraph-2 text-center fw-semibold mt-lg-5 mt-4">Легкое открытие компании.</p>
+                           </div>
+                        </div>
+                        <div class="slider-item">
+                           <div class="w-100 h-100">
+                               <img src="icons/registration/2.svg" alt="" class="img-fluid d-block mx-auto">
+                               <p class="fs-paragraph-2 text-center fw-semibold mt-lg-5 mt-4">Консультации по выбору оптимальной формы бизнеса.</p>
+                           </div>
+                        </div>
+                        <div class="slider-item">
+                           <div class="w-100 h-100">
+                               <img src="icons/registration/3.svg" alt="" class="img-fluid d-block mx-auto">
+                               <p class="fs-paragraph-2 text-center fw-semibold mt-lg-5 mt-4">Быстрое оформление всех необходимых документов.</p>
+                           </div>
+                        </div>
+                   </div>
+                   <button class="border-0 d-xl-none d-block slider-prev position-absolute slider-btn-left  bg-transparent">
+                    <i class="fa-solid fs-1 d-sm-block d-none box-shadow-2 rounded-5 text-corp fa-circle-chevron-left"></i>
+                    <i class="fa-solid fs-1 d-sm-none d-block fa-chevron-left"></i>
+                </button>
+                <button class="border-0  d-xl-none d-block slider-next position-absolute slider-btn-right bg-transparent">
+                    <i class="fa-solid fs-1 d-sm-block d-none box-shadow-2 rounded-5 text-corp fa-circle-chevron-right"></i>
+                    <i class="fa-solid fs-1 d-sm-none d-block fa-chevron-right"></i>
+                </button>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container position-relative">
+                <h3 class="fs-title mb-5 fw-bold">Какие формы ведения бизнеса актуальны в Узбекистане?</h3>
+                <div class="bg-lg-white d-lg-block d-none p-sm-5 rounded-4 py-3">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10">
+                            <div class="w-100 h-100">
+                                <div class="row gx-lg-5 justify-content-evenly">
+                                    <div class="col-xl-5 col-lg-6" data-aos="fade-up">
+                                        <div class="w-100 h-100 d-flex">
+                                            <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                            <div class="d-flex flex-column">
+                                                <h4 class="fs-paragraph-2  fw-bold">Общество с ограниченной ответственностью (ООО)</h4>
+                                                <p class="fs-span opacity-75  mt-lg-4 mt-3"> Идеально подходит для малого и среднего бизнеса. ООО предоставляет учредителям ограниченную ответственность по обязательствам компании, что снижает риски.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6" data-aos="fade-up">
+                                        <div class="w-100 h-100 d-flex">
+                                            <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                            <div class="d-flex flex-column">
+                                                <h4 class="fs-paragraph-2 fw-bold">Индивидуальный предприниматель (ИП)</h4>
+                                                <p class="fs-span opacity-75  mt-lg-4 mt-3"> Выбор для тех, кто хочет работать на себя без сложной структуры. Подходит для малого бизнеса и самозанятых граждан.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6" data-aos="fade-up">
+                                        <div class="w-100 h-100 d-flex">
+                                            <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                            <div class="d-flex flex-column">
+                                                <h4 class="fs-paragraph-2 fw-bold">Акционерное общество (АО)</h4>
+                                                <p class="fs-span opacity-75  mt-lg-4 mt-3"> Предназначено для крупных проектов, связанных с привлечением инвестиций. Акции компании могут быть проданы, что упрощает привлечение капитала.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5 col-lg-6" data-aos="fade-up">
+                                        <div class="w-100 h-100 d-flex">
+                                            <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                            <div class="w-100 h-100 d-flex flex-column">
+                                                <h4 class="fs-paragraph-2  fw-bold">Частное предприятие (ЧП)</h4>
+                                                <p class="fs-span opacity-75  mt-lg-4 mt-3"> Удобный формат для небольших компаний с одним учредителем, который полностью контролирует бизнес.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-lg-none d-block position-relative">
+                    <div class="slick-slider get">
+                        <div class="slider-item px-5">
+                            <div class="w-100 h-100 d-flex flex-column align-items-center text-center">
+                                <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                <div class="d-flex flex-column">
+                                    <h4 class="fs-paragraph-2  fw-bold">Общество с ограниченной ответственностью (ООО)</h4>
+                                    <p class="fs-span opacity-75  mt-lg-4 mt-3"> Идеально подходит для малого и среднего бизнеса. ООО предоставляет учредителям ограниченную ответственность по обязательствам компании, что снижает риски.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item px-5">
+                            <div class="w-100 h-100 d-flex flex-column align-items-center text-center">
+                                <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                <div class="d-flex flex-column">
+                                    <h4 class="fs-paragraph-2 fw-bold">Индивидуальный предприниматель (ИП)</h4>
+                                    <p class="fs-span opacity-75  mt-lg-4 mt-3"> Выбор для тех, кто хочет работать на себя без сложной структуры. Подходит для малого бизнеса и самозанятых граждан.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item px-5">
+                            <div class="w-100 h-100 d-flex flex-column align-items-center text-center">
+                                <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                <div class="d-flex flex-column">
+                                    <h4 class="fs-paragraph-2 fw-bold">Акционерное общество (АО)</h4>
+                                    <p class="fs-span opacity-75  mt-lg-4 mt-3"> Предназначено для крупных проектов, связанных с привлечением инвестиций. Акции компании могут быть проданы, что упрощает привлечение капитала.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item px-5">
+                            <div class="w-100 h-100 d-flex flex-column align-items-center text-center">
+                                <i class="bi bi-check-circle-fill d-block text-corp fs-3 me-3"></i>
+                                <div class="w-100 h-100 d-flex flex-column">
+                                    <h4 class="fs-paragraph-2  fw-bold">Частное предприятие (ЧП)</h4>
+                                    <p class="fs-span opacity-75  mt-lg-4 mt-3"> Удобный формат для небольших компаний с одним учредителем, который полностью контролирует бизнес.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="border-0 d-xl-none d-block slider-prev position-absolute slider-btn-left  bg-transparent">
+                        <i class="fa-solid fs-1 d-sm-block d-none box-shadow-2 rounded-5 text-corp fa-circle-chevron-left"></i>
+                        <i class="fa-solid fs-1 d-sm-none d-block fa-chevron-left"></i>
+                    </button>
+                    <button class="border-0  d-xl-none d-block slider-next position-absolute slider-btn-right bg-transparent">
+                        <i class="fa-solid fs-1 d-sm-block d-none box-shadow-2 rounded-5 text-corp fa-circle-chevron-right"></i>
+                        <i class="fa-solid fs-1 d-sm-none d-block fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-title fw-bold mb-lg-5 mb-3">Как выбрать подходящую форму?</h3>
+                <div class="bg-lg-white p-sm-5 py-3">
+                    <div class="row gx-0 justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="w-100 h-100">
+                                <ul class="list-unstyled fs-paragraph-2">
+                                    <li class="mb-3">
+                                        <span class="text-corp fw-bold">ИП:</span>
+                                         для фрилансеров, частных мастеров, малого бизнеса.
+                                    </li>
+                                    <li class="mb-3">
+                                        <span class="text-corp fw-bold">ООО:</span>
+                                         для малых и средних компаний, заинтересованных в росте.
+                                    </li>
+                                    <li class="mb-3">
+                                        <span class="text-corp fw-bold">АО:</span>
+                                         для крупных бизнес-проектов и привлечения инвесторов.
+                                    </li>
+                                    <li class="mb-3">
+                                        <span class="text-corp fw-bold">ЧП:</span>
+                                         для индивидуальных владельцев бизнеса.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-sm-white py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-title fw-bold mb-lg-5 mb-3">Какие документы нужны для регистрации бизнеса?</h3>
+                <div class="bg-lg-white p-sm-5 py-3 rounded-4 position-relative">
+                    <div class="row gx-lg-5 gy-5 gy-lg-0">
+                        <div class="col-lg-4">
+                            <div class="w-100 h-100 flex-column">
+                                <span class="number">1</span>
+                                <p class="fs-paragraph-2 fw-bold my-lg-5 my-4">
+                                    Для регистрации ООО, если участник — физическое лицо:
+                                </p>
+                                <ul class="fs-span">
+                                    <li class="mb-3">Скан-копии паспорта учредителей.</li>
+                                    <li class="mb-3">Электронное фото на белом фоне (3х4).</li>
+                                    <li class="mb-3">Нотариально заверенная доверенность на нашего сотрудника для проведения всех процедур.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="w-100 h-100 flex-column">
+                                <span class="number">2</span>
+                                <p class="fs-paragraph-2 fw-bold my-lg-5 my-4">
+                                    Для регистрации ООО, если участник — юридическое лицо:
+                                </p>
+                                <ul class="fs-span">
+                                    <li class="mb-3">Выписка из торгового реестра.</li>
+                                    <li class="mb-3">Нотариально заверенная доверенность на представителя в Узбекистане.</li>
+                                    <li class="mb-3">Копии свидетельства о регистрации, устава компании и учредительного договора.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="w-100 h-100 flex-column">
+                                <span class="number">3</span>
+                                <p class="fs-paragraph-2 fw-bold my-lg-5 my-4">
+                                    Дополнительная информация о новой компании:
+                                </p>
+                                <ul class="fs-span">
+                                    <li class="mb-3">Название компании.</li>
+                                    <li class="mb-3">Вид деятельности.</li>
+                                    <li class="mb-3">Налоговый режим.</li>
+                                    <li class="mb-3">Электронная почта, телефон, почтовый адрес с кадастровым номером.</li>
+                                    <li class="mb-3">Сумма уставного фонда.</li>
+                                    <li class="mb-3">Скан паспорта директора.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <p class="fs-paragraph-2 fw-bold  mb-3 text-center">
+                                Особенности работы с валютным контролем
+                            </p>
+                            <p class="fs-paragraph-2  text-center">В Узбекистане требуется регистрация контрактов в банке для проведения платежей. TuranOS помогает с оформлением документов для валютного контроля, чтобы вы могли безопасно вести международные сделки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-title fw-bold  mb-lg-5 mb-3">Почему выбирают нас?</h3>
+                <div class="bg-lg-white p-sm-5 py-3 rounded-4">
+                    <div class="row gx-lg-5 gy-3">
+                        <div class="col-lg-4" data-aos="fade-up">
+                           <div class="w-100 h-100">
+                               <i class="bi bi-check-circle-fill d-block text-corp fs-1"></i>
+                               <p class="fs-paragraph fw-semibold mt-lg-5 mt-4">Комплексный подход:</p>
+                               <p class="fs-paragraph-2 mt-2">
+                                   оформление бизнеса, бухгалтерия, налоги, аудит — всё в одном месте.
+                               </p>
+                           </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up">
+                           <div class="w-100 h-100">
+                               <i class="bi bi-check-circle-fill d-block text-corp fs-1"></i>
+                               <p class="fs-paragraph fw-semibold  mt-lg-5 mt-4">Экономия времени и ресурсов:</p>
+                               <p class="fs-paragraph-2 mt-2">
+                                   мы берем на себя все сложные задачи.
+                               </p>
+                           </div>
+                        </div>
+                        <div class="col-lg-4" data-aos="fade-up">
+                           <div class="w-100 h-100">
+                               <i class="bi bi-check-circle-fill d-block text-corp fs-1"></i>
+                               <p class="fs-paragraph fw-semibold  mt-lg-5 mt-4">Надежность:</p>
+                               <p class="fs-paragraph-2  mt-2">
+                                   работаем строго в рамках законодательства.
+                               </p>
+                           </div>
+                        </div>
+                   </div>
+                   <div class="text-lg-center mt-lg-0 mt-3 mb-lg-5" data-aos="fade-up">
+                       <p class="fs-paragraph fw-bold opacity-75 mt-lg-5 mt-4 mx-auto">Доверьте регистрацию и сопровождение своего бизнеса профессионалам TuranOS!</p>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container py-5">
+                <h4 class="fs-title text-center fw-bold">
+                    Прайс
+                </h4>
+                <div class="row justify-content-center gx-lg-4 gy-lg-0 gy-5 my-lg-5 my-2">
+                    <div class="col-xxl-3 col-md-6 col-10">
+                        <div class="card px-3 py-5 d-flex flex-column w-100 align-items-center">
+                            <h4 class="fs-paragraph fw-bold">Bazis Fixed</h4>
+                            <p class="text-center fs-paragraph-2 mt-3">Количество сотрудников в штате - до 3х человек</p>
+                            <p class="text-center fs-paragraph-2 my-5">Оборот до 50 млн сум</p>
+                            <p class="fs-paragraph fw-bold mb-5">от 4 млн сум</p>
+                            <button class="btn btn-blue">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-md-6 col-10">
+                        <div class="card px-3 py-5 d-flex flex-column w-100 align-items-center">
+                            <h4 class="fs-paragraph fw-bold">Bazis Fixed</h4>
+                            <p class="text-center fs-paragraph-2 mt-3">Количество сотрудников в штате - до 3х человек</p>
+                            <p class="text-center fs-paragraph-2 my-5">Оборот до 50 млн сум</p>
+                            <p class="fs-paragraph fw-bold mb-5">от 4 млн сум</p>
+                            <button class="btn btn-blue">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-md-6 col-10">
+                        <div class="card px-3 py-5 d-flex flex-column w-100 align-items-center">
+                            <h4 class="fs-paragraph fw-bold">Bazis Fixed</h4>
+                            <p class="text-center fs-paragraph-2 mt-3">Количество сотрудников в штате - до 3х человек</p>
+                            <p class="text-center fs-paragraph-2 my-5">Оборот до 50 млн сум</p>
+                            <p class="fs-paragraph fw-bold mb-5">от 4 млн сум</p>
+                            <button class="btn btn-blue">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-md-6 col-10">
+                        <div class="card px-3 py-5 d-flex flex-column w-100 align-items-center">
+                            <h4 class="fs-paragraph fw-bold">Bazis Fixed</h4>
+                            <p class="text-center fs-paragraph-2 mt-3">Количество сотрудников в штате - до 3х человек</p>
+                            <p class="text-center fs-paragraph-2 my-5">Оборот до 50 млн сум</p>
+                            <p class="fs-paragraph fw-bold mb-5">от 4 млн сум</p>
+                            <button class="btn btn-blue">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-sm-white pb-5">
+            <div class="container bg-lg-white rounded-4 p-sm-5 py-3">
+                <h3 class="fw-bold fs-title text-center">FAQ</h3>
+                <div class="row gx-0 justify-content-center">
+                    <div class="col-lg-11">
+                      <div class="accordion mt-lg-5 mt-2" id="accordionExample">
+                        <div class="accordion-item mb-lg-4 mb-2  border-0">
+                          <h2 class="accordion-header ">
+                            <button class="fw-bold accordion-button  border-0 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Почему я должен рассмотреть возможность регистрации компании в Узбекистане? 
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body ">
+                                Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item  mb-lg-4 mb-2 border-0">
+                          <h2 class="accordion-header ">
+                            <button class="fw-bold accordion-button   border-0 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Почему я должен рассмотреть возможность регистрации компании в Узбекистане? 
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                            <div class="accordion-body ">
+                                Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item  mb-lg-4 mb-2  border-0">
+                          <h2 class="accordion-header ">
+                            <button class=" fw-bold accordion-button  border-0 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+                                Почему я должен рассмотреть возможность регистрации компании в Узбекистане? 
+                            </button>
+                          </h2>
+                          <div id="collapseTree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item  mb-lg-4 mb-2 border-0">
+                          <h2 class="accordion-header ">
+                            <button class="fw-bold accordion-button  border-0 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Почему я должен рассмотреть возможность регистрации компании в Узбекистане? 
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                            <div class="accordion-body ">
+                                Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item  mb-lg-4 mb-2 bg-light-grey border-0">
+                          <h2 class="accordion-header ">
+                            <button class="fw-bold accordion-button   border-0 py-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Почему я должен рассмотреть возможность регистрации компании в Узбекистане? 
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                  <h4 class="fs-title text-center mb-5">
+                    Похожие услуги
+                  </h4>
+                  <div class="row rows-col-xl-6 row-cols-lg-4 row-cols-md-2 row-cols-1 gy-3 gx-2">
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2">
+                        <div class="w-100 h-100 d-flex justify-content-center align-items-center bg-white py-3 rounded-2">
+                            <p class="fw-bold mb-0">Получение ПИНФЛ</p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3 text-white">
+        <div class="container">
+            <a href="index.html">
+                <img src="icons/logo_white.svg" alt="" class="img-fluid footer-logo d-block mb-lg-5 mb-3">
+            </a>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Навигация</p>
+                        <ul class="list-unstyled fs-paragraph-2 fw-light">
+                            <li>
+                                <a href="#" class="">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Клиенты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Вопрос-ответ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Адрес</p>
+                        <p class="fs-paragraph-2 fw-light w-sm-70">
+                            Ташкент, Чиланзар, Ц квартал, ул.Кичик Халка йули, дом 7/1
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Контакты</p>
+                        <ul class="list-unstyled fs-paragraph-2 fw-light">
+                            <li>
+                                <a href="tel:+998974314000" class="">+998 (97) 431-40-00</a>
+                            </li>
+                            <li>
+                                <a href="tel:+998712769694" class="">+998 (71) 276-96-94</a>
+                            </li>
+                            <li>
+                                <a href="mailto:salesturanbuh@gmail.com@gmail.com" class="long-text ">salesturanbuh@gmail.com@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Соц. сети</p>
+                        <ul class="list-inline text-white mt-3 ">
+                            <li class="list-inline-item me-4">
+                              <a href="#" class=""><i class="fs-4 bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item">
+                              <a href="#" class=""><i class="fs-4 bi bi-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
