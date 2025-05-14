@@ -19,6 +19,11 @@ a{
     color: white;
     background: var(--color-corp);
     width: fit-content;
+    border-radius: 10px;
+}
+.btn-white{
+    background: white;
+    color: var(--color-corp);
 }
 .fs-title{
     font-size: clamp(1.375rem, 1.075rem + 1.5vw, 2.875rem);
@@ -414,6 +419,24 @@ footer{
 .table-responsive table {
     min-width: 1000px; /* или больше, в зависимости от количества колонок */
 }
+.h-200{
+    height: 200px;
+}
+.arrow {
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.h-lg-70{
+    height: 70%;
+}
+.arrow-custom.accordion-button::after{
+    display: none;
+}
+.arrow-custom.accordion-button:not(.collapsed)::after{
+    display: none;
+}
+
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;
@@ -440,6 +463,15 @@ footer{
     }
     .rounded-sm{
         border-radius: 20px;
+    }
+    .arrow {
+        right: 45%;
+        top: unset;
+        bottom: -25%;
+        transform: rotate(90deg) translateX(-50%) translateY(0);
+    }
+    .h-lg-70{
+        height: unset;
     }
 }
 @media (max-width: 768px) {
@@ -511,6 +543,9 @@ footer{
     }
     .bg-lg-white{
         background: unset;
+    }
+    .h-200{
+        height: 100px;
     }
 
 }

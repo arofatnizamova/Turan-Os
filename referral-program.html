@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Turan OS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body > 
+    <header class="bg-white py-3">
+        <div class="container d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="row gx-0 justify-content-between w-100">
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex justify-content-between align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="icons/logo.svg" alt="Logo" class="logo img-fluid">
+                            </a>
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon main-page-toggler navbar-toggler-custom"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav bg-blur gap-xxl-3 py-2 px-lg-4 mx-auto  align-items-lg-center h-100">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">О нас</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="news.html" class="nav-link">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="vacancy.html" class="nav-link">Вакансии</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contacts.html" class="nav-link">Контакты</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown w-fit-content border-0 rounded-2 bg-corp">
+                                    <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      RU
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                                      <li><a class="dropdown-item" href="#">Английский</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="bg-black text-white rounded-2 ms-5 d-lg-flex d-none">
+                <button class="btn btn-offcanvas  text-white d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span>Наши услуги</span>
+                    <span class="offcanvas-burger ms-2 d-block"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-xl-block d-none">
+            <div class="gap-4 fw-medium d-flex text-corp">
+                <a href="mailto:salesturanbuh@gmail.com@gmail.com">salesturanbuh@gmail.com@gmail.com</a>
+                <a href="tel:+998974314000">
+                    +998 (97) 431-40-00
+                </a>
+                <a href="https://go.2gis.com/15ou9">Ташкент, Чиланзар, Ц квартал, ул.Кичик Халка йули, дом 7/1</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-title fw-bold mb-lg-5 mb-3 text-center">Реферальная программа</h3>
+                <div class="bg-corp rounded-4">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="w-100 h-100">
+                                <div class="row justify-content-between">
+                                    <div class="col-lg-6">
+                                        <div class="w-100 p-lg-0 p-5 h-100 d-flex flex-column text-lg-start text-center justify-content-center text-white">
+                                            <h4 class="fs-title fw-semibold">Зарабатывайте на рекомендациях</h4>
+                                            <p class="fs-paragraph-2 fw-light my-lg-4 my-3">Рассказывайте новым клиентам о сервисах Контура и зарабатывайте от 10 до 50% от их оплат</p>
+                                            <a href="#" class="btn btn-corp d-block w-fit-content mx-lg-0 mx-auto btn-white py-3 px-5">Стать парнером</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <div class="w-100 h-100">
+                                            <img src="images/referal/bg.png" alt="" class="img-fluid object-fit-cover">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <div class="bg-white rounded-4 p-4 fw-medium">
+                    <h3 class="fs-title fw-bold mb-lg-5 mb-3 text-center">Как работает программа</h3>
+                    <div class="row gy-5 justify-content-lg-evenly justify-content-center">
+                        <div class="col-lg-3 col-7">
+                            <div class="w-100 h-100 arrow-cntainer position-relative">
+                                <i class="bi bi-arrow-right fs-1 position-absolute arrow"></i>
+                                <img src="images/referal/1.svg" alt="" class="img-fluid d-block mx-auto h-200">
+                                <p class="fs-paragraph-2 text-center">Вы привлекаете нового
+                                    клиента на сервис</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-7">
+                            <div class="w-100 h-100 arrow-cntainer position-relative">
+                                <i class="bi bi-arrow-right fs-1 position-absolute arrow"></i>
+                                <img src="images/referal/2.svg" alt="" class="img-fluid d-block mx-auto h-200">
+                                <p class="fs-paragraph-2 text-center">TURANOS продает
+                                    сервис клиенту</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-7">
+                            <div class="w-100 h-100 arrow-cntainer position-relative">
+                                <img src="images/referal/3.svg" alt="" class="img-fluid d-block mx-auto h-200">
+                                <p class="fs-paragraph-2 text-center">Вы получаете
+                                    вознаграждение</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-title fw-bold mb-lg-5 mb-3 text-center">Почему это выгодно?</h3>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="w-100 h-100 bg-corp rounded-4 text-white">
+                            <div class="row justify-content-lg-between justify-content-end">
+                                <div class="col-xl-5 col-lg-6">
+                                    <div class="w-100 h-100 p-lg-5 px-4 pt-4 pb-0">
+                                        <p class="fs-title fw-semibold lh-1">Денежное
+                                            вознаграждение</p>
+                                        <p class="fs-paragraph-2 mb-0">
+                                            Переведем от 10 до 50 % от оплат новых клиентовна ваш расчетный счет
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-4">
+                                    <div class="w-100 h-100 d-flex align-items-end">
+                                        <img src="images/referal/card.png" alt="" class="img-fluid h-lg-70">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="w-100 h-100 bg-corp rounded-4 text-white p-lg-5 p-4">
+                            <img src="icons/referal/1.svg" alt="" class="img-fluid object-fit-cover icon-height-2">
+                            <p class="fw-semibold fs-paragraph my-lg-4 my-3">Не требует вложений</p>
+                            <p class="fs-paragraph-2 mb-0 fw-light">Разработкой сервисов, продажами и сопровождением клиента занимается TURANOS</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 bg-corp rounded-4 text-white p-lg-5 p-4">
+                            <img src="icons/referal/2.svg" alt="" class="img-fluid object-fit-cover icon-height-2">
+                            <p class="fw-semibold fs-paragraph my-lg-4 my-3">Легкий вывод средств</p>
+                            <p class="fs-paragraph-2 mb-0 fw-light">Для физлиц доступен упрощенный способ получения вознаграждения</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 bg-corp rounded-4 text-white p-lg-5 p-4">
+                            <img src="icons/referal/3.svg" alt="" class="img-fluid object-fit-cover icon-height-2">
+                            <p class="fw-semibold fs-paragraph my-lg-4 my-3">Лояльность ваших клиентов</p>
+                            <p class="fs-paragraph-2 mb-0 fw-light">Более 50 сервисов для бизнеса и бухгалтерии</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="w-100 h-100 bg-corp rounded-4 text-white p-lg-5 p-4">
+                            <img src="icons/referal/4.svg" alt="" class="img-fluid object-fit-cover icon-height-2">
+                            <p class="fw-semibold fs-paragraph my-lg-4 my-3">Увеличение вашего дохода</p>
+                            <p class="fs-paragraph-2 mb-0 fw-light">Для постоянных и крупных партнеров предусмотрены индивидуальные условия</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 py-3 bg-white">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-3">
+                        <h3 class="fw-bold fs-title text-lg-start text-center mb-lg-0 mb-3 mt-lg-5 mt-0">Частые вопросы</h3>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="w-100 h-100">
+                            <div class="accordion mt-lg-5 mt-2" id="accordionExample">
+                                <div class="accordion-item mb-lg-4 mb-2  border-0">
+                                  <div class="accordion-header ">
+                                    <div class="fw-bold accordion-button arrow-custom  border-0 py-4" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="row gx-sm-2 gx-0 w-100">
+                                            <div class="col-sm-1 col-2">
+                                                <i class="bi bi-plus-lg fs-2 me-1"></i>
+                                            </div>
+                                            <div class="col-sm-11 col-10">
+                                                <div class="w-100 h-100 d-flex align-items-center">
+                                                    <p class="mb-0">
+                                                        Что такое реферальная программа?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body ">
+                                        <div class="row justify-content-end">
+                                            <div class="col-sm-11 col-10">
+                                                Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item mb-lg-4 mb-2  border-0">
+                                    <div class="accordion-header ">
+                                      <div class="fw-bold accordion-button arrow-custom  border-0 py-4" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                          <div class="row gx-sm-2 gx-0 w-100">
+                                              <div class="col-sm-1 col-2">
+                                                  <i class="bi bi-plus-lg fs-2 me-1"></i>
+                                              </div>
+                                              <div class="col-sm-11 col-10">
+                                                  <div class="w-100 h-100 d-flex align-items-center">
+                                                      <p class="mb-0">
+                                                          Что такое реферальная программа?
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body ">
+                                          <div class="row justify-content-end">
+                                              <div class="col-sm-11 col-10">
+                                                  Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item mb-lg-4 mb-2  border-0">
+                                    <div class="accordion-header ">
+                                      <div class="fw-bold accordion-button arrow-custom  border-0 py-4" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                          <div class="row gx-sm-2 gx-0 w-100">
+                                              <div class="col-sm-1 col-2">
+                                                  <i class="bi bi-plus-lg fs-2 me-1"></i>
+                                              </div>
+                                              <div class="col-sm-11 col-10">
+                                                  <div class="w-100 h-100 d-flex align-items-center">
+                                                      <p class="mb-0">
+                                                          Что такое реферальная программа?
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body ">
+                                          <div class="row justify-content-end">
+                                              <div class="col-sm-11 col-10">
+                                                  Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="accordion-item mb-lg-4 mb-2  border-0">
+                                      <div class="accordion-header ">
+                                        <div class="fw-bold accordion-button arrow-custom  border-0 py-4" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                            <div class="row gx-sm-2 gx-0 w-100">
+                                                <div class="col-sm-1 col-2">
+                                                    <i class="bi bi-plus-lg fs-2 me-1"></i>
+                                                </div>
+                                                <div class="col-sm-11 col-10">
+                                                    <div class="w-100 h-100 d-flex align-items-center">
+                                                        <p class="mb-0">
+                                                            Что такое реферальная программа?
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body ">
+                                            <div class="row justify-content-end">
+                                                <div class="col-sm-11 col-10">
+                                                    Узбекистан является привлекательным местом для регистрации компании, предлагая множество преимуществ, включая стабильную политическую обстановку, хорошо отлаженную правовую систему, благоприятный для бизнеса налоговый режим, стратегическое расположение и растущую экономику.
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-lg-5 pt-3 pb-5">
+            <div class="container">
+                <div class="row gy-3">
+                    <div class="col-lg-5">
+                        <h3 class="fs-title fw-bold text-lg-start text-center">Как стать реферальным партнером</h3>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="w-100 h-100 d-flex flex-column justify-content-between">
+                            <ol class="fs-paragraph-2 fw-medium">
+                                <li>
+                                    Пройти регистрацию или авторизоваться по почте
+                                </li>
+                                <li>
+                                    Заполнить анкету по кнопке «Стать партнером»
+                                </li>
+                                <li>
+                                    Выбрать инструменты и начать рекомендовать
+                                </li>
+                            </ol>
+                            <a href="#" class="d-block w-fit-content mx-lg-0 mx-auto btn-corp py-3 px-4">Стать партнером</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3 text-white">
+        <div class="container">
+            <a href="index.html">
+                <img src="icons/logo_white.svg" alt="" class="img-fluid footer-logo d-block mb-lg-5 mb-3">
+            </a>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Навигация</p>
+                        <ul class="list-unstyled fs-paragraph-2 fw-light">
+                            <li>
+                                <a href="#" class="">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Клиенты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Вопрос-ответ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Адрес</p>
+                        <p class="fs-paragraph-2 fw-light w-sm-70">
+                            Ташкент, Чиланзар, Ц квартал, ул.Кичик Халка йули, дом 7/1
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Контакты</p>
+                        <ul class="list-unstyled fs-paragraph-2 fw-light">
+                            <li>
+                                <a href="tel:+998974314000" class="">+998 (97) 431-40-00</a>
+                            </li>
+                            <li>
+                                <a href="tel:+998712769694" class="">+998 (71) 276-96-94</a>
+                            </li>
+                            <li>
+                                <a href="mailto:salesturanbuh@gmail.com@gmail.com" class="long-text ">salesturanbuh@gmail.com@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Соц. сети</p>
+                        <ul class="list-inline text-white mt-3 ">
+                            <li class="list-inline-item me-4">
+                              <a href="#" class=""><i class="fs-4 bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item">
+                              <a href="#" class=""><i class="fs-4 bi bi-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

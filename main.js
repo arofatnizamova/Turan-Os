@@ -289,5 +289,23 @@ $(document).ready(function () {
 
   // Также можно проверить сразу при загрузке страницы, если элементы уже видны
   checkScroll();
+  const accordionButtons = document.querySelectorAll(".arrow-custom");
+
+    accordionButtons.forEach(button => {
+      button.addEventListener("click", function () {
+        const icon = this.querySelector("i");
+
+        // Подождём завершения toggle (Bootstrap может менять классы с задержкой)
+        setTimeout(() => {
+          if (this.classList.contains("collapsed")) {
+            icon.classList.remove("bi-dash-lg");
+            icon.classList.add("bi-plus-lg");
+          } else {
+            icon.classList.remove("bi-plus-lg");
+            icon.classList.add("bi-dash-lg");
+          }
+        }, 100); // небольшая задержка, чтобы изменения классов успели примениться
+      });
+    });
   })
   
