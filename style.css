@@ -26,6 +26,9 @@ a{
 .fs-title-2{
     font-size: 46px;
 }
+.fs-title-3{
+    font-size: clamp(1.375rem, 0.125rem + 4vw, 2.375rem);
+}
 .fs-paragraph{
     font-size: clamp(1rem, 0.875rem + 0.625vw, 1.625rem);
 }
@@ -403,6 +406,13 @@ footer{
     border: 1px solid rgba(0, 0, 0, 0.16);
     border-radius: 16px;
     padding: 10px 30px;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: white;
+    --bs-table-bg-type: rgba(0, 170, 211, 0.7);
+}
+.table-responsive table {
+    min-width: 1000px; /* или больше, в зависимости от количества колонок */
 }
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
