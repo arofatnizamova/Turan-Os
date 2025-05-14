@@ -399,6 +399,11 @@ footer{
 .bg-light-grey{
     background: #ede9e98e;
 }
+.form-control-2{
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    padding: 10px 30px;
+}
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;
