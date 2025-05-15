@@ -480,6 +480,9 @@ footer{
 .img-icon-litle{
     height: 80px;
 }
+.form-white::placeholder{
+    color: white;
+}
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;
