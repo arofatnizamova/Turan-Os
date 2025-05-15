@@ -483,6 +483,12 @@ footer{
 .form-white::placeholder{
     color: white;
 }
+.bg-lg-corp {
+    background: var(--color-corp);
+}
+.text-lg-white{
+    color: white;
+}
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;
@@ -526,6 +532,18 @@ footer{
     .content-container::before {
         left: -27px;
         bottom: unset;
+    }
+    .bg-lg-corp {
+        background: unset;
+    }
+    .text-lg-white{
+        color: unset;
+    }
+    .bg-mobile-corp {
+        background: var(--color-corp);
+    }
+    .text-mobile-white{
+        color: white;
     }
 }
 @media (max-width: 768px) {
