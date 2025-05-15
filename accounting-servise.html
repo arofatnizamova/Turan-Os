@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Turan OS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body > 
+    <header class="bg-white py-3">
+        <div class="container d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg w-100">
+                <div class="row gx-0 justify-content-between w-100">
+                    <div class="col-lg-2">
+                        <div class="w-100 h-100 d-flex justify-content-between align-items-center">
+                            <a href="index.html" class="navbar-brand">
+                                <img src="icons/logo.svg" alt="Logo" class="logo img-fluid">
+                            </a>
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon main-page-toggler navbar-toggler-custom"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="w-100 h-100 d-flex align-items-center">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav bg-blur gap-xxl-3 py-2 px-lg-4 mx-auto  align-items-lg-center h-100">
+                                    <li class="nav-item">
+                                        <a href="index.html" class="nav-link">
+                                            Главная
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">О нас</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="news.html" class="nav-link">Новости</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="vacancy.html" class="nav-link">Вакансии</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contacts.html" class="nav-link">Контакты</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown w-fit-content border-0 rounded-2 bg-corp">
+                                    <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      RU
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Узбекский</a></li>
+                                      <li><a class="dropdown-item" href="#">Английский</a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="bg-black text-white rounded-2 ms-5 d-lg-flex d-none">
+                <button class="btn btn-offcanvas  text-white d-flex align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <span>Наши услуги</span>
+                    <span class="offcanvas-burger ms-2 d-block"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container d-xl-block d-none">
+            <div class="gap-4 fw-medium d-flex text-corp">
+                <a href="mailto:salesturanbuh@gmail.com@gmail.com">salesturanbuh@gmail.com@gmail.com</a>
+                <a href="tel:+998974314000">
+                    +998 (97) 431-40-00
+                </a>
+                <a href="https://go.2gis.com/15ou9">Ташкент, Чиланзар, Ц квартал, ул.Кичик Халка йули, дом 7/1</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="py-lg-5 py-3 d-lg-block d-none">
+            <div class="container">
+                <h3 class="fw-bold fs-title">Ваши финансы под надежным контролем</h3>
+                <div class="mt-lg-5 mt-3 position-relative" data-aos="fade-up">
+                    <img src="images/accauntant/bg.png" alt="" class="rounded-4 img-fluid object-fit-cover h-sm-350 w-100">
+                    <div class="position-absolute banner-info banner-info-right">
+                        <div class="row gx-0 w-100 justify-content-center justify-content-lg-end">
+                            <div class="col-lg-5 col-10">
+                                <div class="w-100 h-100  px-sm-5 px-4 pt-5 pb-4  position-relative">
+                                    <div class="banner-info-container banner-info-container-right rounded-5 position-absolute"></div>
+                                    <p class="fw-light fs-span text-white">Своевременная и точная отчетность — залог стабильного развития вашего бизнеса. Доверьте ведение бухгалтерии профессионалам TuranOS и сосредоточьтесь на достижении своих целей.</p>
+                                    <a href="#" class="btn btn-corp btn-white position-absolute btn-position py-3">Бесплатная консультация</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-3 text-white bg-corp text-center d-lg-none d-block rounded-5">
+            <div class="container px-5">
+                <h3 class="fw-bold fs-title mb-3">Ваши финансы под надежным контролем</h3>
+                <p class="fw-light fs-span">Своевременная и точная отчетность — залог стабильного развития вашего бизнеса. Доверьте ведение бухгалтерии профессионалам TuranOS и сосредоточьтесь на достижении своих целей.</p>
+                <a href="#" class="btn btn-corp btn-white py-3 mt-3 d-block w-fit-content mx-auto">Бесплатная консультация</a>
+            </div>
+        </section>
+        <section class="py-3 bg-white py-lg-5">
+            <div class="container">
+                <h3 class="fs-title fw-bold text-center">Мы предлагаем полный комплекс услуг, чтобы ваша отчетность была безупречной:</h3>
+                <div class="row gx-lg-5 gy-5 mt-lg-5 mt-2 mb-lg-5">
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-medium mt-lg-4 mt-3 opacity-75">Ведение и восстановление бухгалтерского учета</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Полный контроль за финансовыми операциями и восстановление учета для упрощения отчетности.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-medium mt-lg-4 mt-3 opacity-75">Ежемесячные, квартальные и годовые отчеты</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Подготовка отчетности по всем требованиям налоговых органов и регулирующих организаций.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-medium mt-lg-4 mt-3 opacity-75">Расчет заработной платы и налогов</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Автоматизация начисления зарплат и точный расчет налоговых обязательств.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-medium mt-lg-4 mt-3 opacity-75">Операции по кассе</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Учет и контроль наличных денежных средств компании.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-medium mt-lg-4 mt-3 opacity-75">Бухгалтерское сопровождение бизнеса</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Регулярная поддержка всех финансовых операций вашего бизнеса.
+                            </p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-corp py-lg-5 py-3 text-white">
+            <div class="container">
+                <h3 class="fs-title fw-bold mx-auto text-center">Повышаем эффективность вашего бизнеса</h3>
+                <p class="fs-paragraph-2 text-center my-5" >Мы помогаем компаниям оптимизировать бизнес-процессы, повышая их эффективность и сокращая издержки. Наши специалисты проанализируют текущие процессы и предложат конкретные решения для улучшения работы вашей организации.</p>
+                 <div class="row gx-lg-5 gy-5 my-lg-5 justify-content-evenly">
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 d-flex flex-column">
+                            <span class="number number-small">1</span>
+                            <p class="fs-paragraph-2 my-3">Прозрачность и надежность:</p>
+                            <p class="fs-span">Ваши данные под нашим внимательным контролем.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 d-flex flex-column">
+                            <span class="number number-small">2</span>
+                            <p class="fs-paragraph-2 my-3">Экономия времени</p>
+                            <p class="fs-span">Полное избавление от рутинной бухгалтерской работы.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 d-flex flex-column">
+                            <span class="number number-small">3</span>
+                            <p class="fs-paragraph-2 my-3">Гибкость услуг:</p>
+                            <p class="fs-span">Индивидуальный подход под ваш бизнес.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="w-100 h-100 d-flex flex-column">
+                            <span class="number number-small">4</span>
+                            <p class="fs-paragraph-2 my-3">Соответствие стандартам:</p>
+                            <p class="fs-span">Гарантия соблюдения налогового законодательства и бухгалтерских норм.</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+        <section class="bg-white py-lg-5 py-3">
+            <div class="container">
+                <h3 class="fs-title fw-bold text-center">Почему это важно для вашего бизнеса?</h3>
+                <div class="row gx-lg-5 gy-5 mt-lg-5 mt-2 mb-lg-5">
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-semibold opacity-75 mt-lg-4 mt-3">Точность данных:</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Исключение ошибок и недоразумений с налоговыми органами.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-semibold opacity-75 mt-lg-4 mt-3">Снижение рисков:</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Предотвращение штрафов и финансовых потерь.
+                            </p>
+                        </div>
+                     </div>
+                     <div class="col-lg-4">
+                        <div class="w-100 h-100">
+                            <i class="bi bi-check-circle-fill d-block text-corp fs-3"></i>
+                            <p class="fs-paragraph-2 fw-semibold opacity-75 mt-lg-4 mt-3">Развитие бизнеса:</p>
+                            <p class="fs-span mt-2 opacity-75">
+                                Освобождение времени для стратегических задач.
+                            </p>
+                        </div>
+                     </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="timeline-section bg-corp py-lg-5 py-3">
+            <div class="container">
+                <p class="fs-paragraph text-white text-center m-0 w-lg-80 mx-auto">
+                    Дорожная карта - <span class="text-white ff-medium ">Создайте свою компанию в Узбекистане в несколько шагов</span> <br>  Получите доступ к динамично растущему рынку с ежегодным ростом ВВП более 5% 
+                </p>
+                <div class="timeline timeline-white mt-5">
+                    <div class="container-contant right">
+                      <div class="content">
+                        <p class="fw-semibold">Первичная консультация:</p>
+                        <p class="mb-0">Выявляем ваши задачи и составляем план работы.</p>
+                      </div>
+                    </div>
+                    <div class="container-contant left">
+                      <div class="content">
+                        <p class="fw-semibold">Анализ текущего учета:</p>
+                        <p class="mb-0 " >Изучаем состояние ваших финансов и отчетности.</p>
+                      </div>
+                    </div>
+                    <div class="container-contant right">
+                      <div class="content">
+                        <p class="fw-semibold">Ведение учета или восстановление:
+                            </p>
+                        <p class="mb-0">Приводим документы в порядок и берем бухгалтерию под наш контроль.</p>
+                      </div>
+                    </div>
+                    <div class="container-contant left">
+                      <div class="content">
+                        <p class="fw-semibold">Ежемесячное сопровождение:
+                            </p>
+                        <p class="mb-0">Обеспечиваем точность всех отчетов и расчетов.</p>
+                      </div>
+                    </div>
+            </div>
+        </section>
+        <section id="question-form" class="py-lg-5 py-3 bg-corp text-white">
+            <div class="container">
+                <div class="row justify-content-center gx-0">
+                    <div class="col-lg-7">
+                        <h3 class="fs-title text-center fw-bold" data-aos="fade-up">Вы познакомились с нашим подходом к работе</h3>
+                    </div>
+                </div>
+			 <p class="fs-paragraph-2 opacity-75  text-center mt-lg-4" data-aos="fade-up">У вас остались вопросы, которые хотите задать?</p>
+			 <div class="row align-items-center justify-content-between gx-lg-5 gx-0 gy-3 mt-lg-5 flex-lg-row flex-column-reverse">
+				<div class="col-lg-5">
+					<div class="w-100 h-100 d-flex flex-column">
+						<p class="fs-paragraph fw-bold  mt-4">+998 ( 90 ) 222 - 22 - 22</p>
+						<p class="fs-paragraph-2 mt-3 w-lg-70">Узбекистан, 100031, Ташкент, Мирабадский р-н, ул. Афросиаб, 2</p>
+							<ul class="list-inline  mt-3 ">
+								<li class="list-inline-item me-4">
+								  <a href="#" class=""><i class="fs-3 bi bi-instagram"></i></a></li>
+								<li class="list-inline-item">
+								  <a href="#" class=""><i class="fs-3 bi bi-telegram"></i></a></li>
+							</ul>
+					</div>
+				</div>
+				<div class="col-lg-5 col-10">
+					<form class="text-lg-start text-center">
+						<input type="text" class="form-control form-white my-lg-5 my-3" placeholder="Ваше имя">
+						<input id="phone" type="tel" class="form-control form-white w-100" placeholder="+998 (99) - 999 - 9999">
+						<input type="text" class="form-control form-white my-lg-5 my-3" placeholder="Введите ваши коментарии">
+						<button type="submit" class="btn btn-corp btn-white py-2 px-4">Отправить</button>
+					</form>
+				</div>
+			 </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-lg-5 py-3 text-white">
+        <div class="container">
+            <a href="index.html">
+                <img src="icons/logo_white.svg" alt="" class="img-fluid footer-logo d-block mb-lg-5 mb-3">
+            </a>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Навигация</p>
+                        <ul class="list-unstyled fs-paragraph-2 fw-light">
+                            <li>
+                                <a href="#" class="">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Услуги</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Клиенты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">Вопрос-ответ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Адрес</p>
+                        <p class="fs-paragraph-2 fw-light w-sm-70">
+                            Ташкент, Чиланзар, Ц квартал, ул.Кичик Халка йули, дом 7/1
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Контакты</p>
+                        <ul class="list-unstyled fs-paragraph-2 fw-light">
+                            <li>
+                                <a href="tel:+998974314000" class="">+998 (97) 431-40-00</a>
+                            </li>
+                            <li>
+                                <a href="tel:+998712769694" class="">+998 (71) 276-96-94</a>
+                            </li>
+                            <li>
+                                <a href="mailto:salesturanbuh@gmail.com@gmail.com" class="long-text ">salesturanbuh@gmail.com@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="w-100 h-100">
+                        <p class="fw-bold fs-paragraph-2">Соц. сети</p>
+                        <ul class="list-inline text-white mt-3 ">
+                            <li class="list-inline-item me-4">
+                              <a href="#" class=""><i class="fs-4 bi bi-instagram"></i></a></li>
+                            <li class="list-inline-item">
+                              <a href="#" class=""><i class="fs-4 bi bi-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.6.0/jquery.marquee.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab16f4767e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
