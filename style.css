@@ -91,7 +91,9 @@ a{
     transform: skew(354deg, 354deg);
 }
 .banner-info-container-right{
-    transform: skew(7deg, 5deg);
+    transform: skewY(-5deg);
+    border-radius: inherit;
+    transform-origin: right center;
 }
 .banner-info-right{
     left: unset;
@@ -475,6 +477,9 @@ footer{
     right: 50%;
     transform: translateX(50%);
 }
+.img-icon-litle{
+    height: 80px;
+}
 @media(max-width: 1200px){
     .bg-xl-white, .bg-xl-corp{
         background: unset;
@@ -554,6 +559,9 @@ footer{
     .number {
         font-size: 24px;
         padding: 12px 24px;
+    }
+    .img-icon-litle{
+        height: 45px;
     }
 }
 @media(max-width: 576px){
